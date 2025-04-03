@@ -38,13 +38,11 @@ body {
     --link-color: #355f8b; 
     --back-to-top-bg: #6c757d; 
     --back-to-top-text: white;
-    --bg-color: #f8f9fa; /* Light grey background */
-    --text-color-dark: #343a40; /* Very dark grey/black */
+    --bg-color: #f8f9fa; 
+    --text-color-dark: #343a40;
     --footer-bg: #343a40;
     --footer-text: #f8f9fa;
 }
-
-/* --- Links --- */
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -56,54 +54,51 @@ a:hover {
     color: darken(var(--link-color), 15%);
 }
 
-/* --- Icons --- */
 .icon {
     margin-right: 0.6rem;
     color: var(--icon-color);
-    width: 1.2em; /* Consistent width */
+    width: 1.2em; 
     text-align: center;
 }
-.icon-li { /* Icons inside list items */
+.icon-li {
      margin-right: 0.6rem;
     color: var(--icon-color);
 }
 
-
-/* --- Header / Navbar --- */
 .navbar {
     background-color: var(--navbar-bg);
-    padding: 0.8rem 2rem; /* Use rem */
+    padding: 0.8rem 2rem; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    position: fixed; /* Make navbar fixed */
+    flex-wrap: wrap; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure navbar stays on top */
+    z-index: 1000; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-brand {
-    font-size: 2rem; /* Adjusted size */
+    font-size: 2rem; 
     font-weight: bold;
     color: var(--navbar-text);
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.5rem; /* Add margin for wrapping */
+    margin-bottom: 0.5rem; 
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem; /* Use rem */
-    margin-bottom: 0.5rem; /* Add margin for wrapping */
+    gap: 1.5rem;
+    margin-bottom: 0.5rem; 
 }
 
 .nav-links a {
     color: var(--navbar-link);
-    font-size: 1.1rem; /* Adjusted size */
+    font-size: 1.1rem; 
     padding: 0.3rem 0.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 4px;
@@ -112,65 +107,60 @@ a:hover {
 
 .nav-links a:hover {
     color: var(--navbar-link-hover);
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover background */
+    background-color: rgba(255, 255, 255, 0.1); 
     text-decoration: none;
 }
 
-/* --- Main Content Area --- */
 .container {
-    /* max-width: 900px;
-     Limit content width */
-    margin: 0 auto; /* Center container */
-    padding: 2rem 1rem; /* Padding around content */
+    margin: 0 auto; 
+    padding: 2rem 1rem; 
 }
 
 /* --- CV Sections --- */
 .cv-section {
-    background-color: #ffffff; /* White background for sections */
-    padding: 2rem; /* Padding inside sections */
-    margin-bottom: 2rem; /* Space between sections */
+    background-color: #ffffff; 
+    padding: 2rem; 
+    margin-bottom: 2rem; 
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .cv-section:last-of-type {
-    margin-bottom: 0; /* No margin after last section */
+    margin-bottom: 0;
 }
 
 .section-content {
-    text-align: left; /* Default to left align */
+    text-align: left;
 }
 
 .cv-section h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.8rem; /* Adjusted size */
+    font-size: 1.8rem; 
     color: var(--section-title-color);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--icon-color); /* Use icon color for border */
+    border-bottom: 2px solid var(--icon-color); 
     display: flex;
     align-items: center;
     gap: 0.7rem;
 }
-.cv-section h2 .fa-solid { /* Icon in heading */
+.cv-section h2 .fa-solid {
     color: var(--icon-color);
 }
 
-
-/* Content within sections */
 .about-details p,
 .qualification-details p,
 .skills-details p,
 .skills-details li {
-    font-size: 1rem; /* Standard text size */
+    font-size: 1rem; 
     margin-bottom: 0.8rem;
     color: var(--section-text-color);
 }
-.about-details .label { /* For aligning labels in About Me */
+.about-details .label { 
     font-weight: bold;
     min-width: 70px;
     display: inline-block;
 }
-.about-details a { /* Ensure email link color is standard */
+.about-details a { 
     color: var(--link-color);
 }
 
@@ -216,7 +206,7 @@ a:hover {
      gap: 0.5rem;
 }
 .soft-skills-list {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
     padding-left: 0.5rem;
 }
 .soft-skills-list li {
@@ -225,8 +215,6 @@ a:hover {
      margin-bottom: 0.5rem;
 }
 
-
-/* --- Back to Top Button --- */
 .back-to-top-btn {
     display: inline-block;
     margin-top: 1.5rem;
@@ -248,8 +236,6 @@ a:hover {
     margin-left: 0.5rem;
 }
 
-
-/* --- Footer --- */
 .footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
@@ -259,31 +245,28 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* --- Responsive Design --- */
-
-/* Medium screens (tablets) */
 @media (max-width: 768px) {
     html {
-        font-size: 15px; /* Slightly smaller base font */
+        font-size: 15px;
     }
     body {
-        padding-top: 100px; /* Adjust for potentially taller wrapped navbar */
+        padding-top: 100px; 
     }
     .navbar {
         padding: 0.8rem 1.5rem;
-        justify-content: center; /* Center items when wrapped */
+        justify-content: center; 
     }
     .nav-brand {
          width: 100%;
          justify-content: center;
          text-align: center;
-         margin-bottom: 0.8rem; /* More space below brand */
+         margin-bottom: 0.8rem; 
     }
     .nav-links {
         width: 100%;
-        justify-content: center; /* Center nav links */
+        justify-content: center;
         gap: 1rem;
-        margin-bottom: 0; /* Reset margin */
+        margin-bottom: 0;
     }
 
     .container {
@@ -297,13 +280,12 @@ a:hover {
     }
 }
 
-/* Small screens (mobile phones) */
 @media (max-width: 480px) {
     html {
-        font-size: 14px; /* Even smaller base font */
+        font-size: 14px; 
     }
     body {
-         padding-top: 90px; /* Fine-tune again */
+         padding-top: 90px;
     }
     .navbar {
         padding: 0.6rem 1rem;
@@ -313,7 +295,7 @@ a:hover {
     }
      .nav-links {
         gap: 0.5rem;
-        flex-wrap: wrap; /* Allow nav links themselves to wrap */
+        flex-wrap: wrap;
     }
     .nav-links a {
         font-size: 1rem;
@@ -335,10 +317,10 @@ a:hover {
     .qualification-details p,
     .skills-details p,
     .skills-details li {
-        font-size: 0.95rem; /* Slightly smaller text on mobile */
+        font-size: 0.95rem;
     }
     .about-details .label {
-        min-width: 60px; /* Adjust label width */
+        min-width: 60px; 
     }
      .back-to-top-btn {
         padding: 0.4rem 0.8rem;
@@ -346,12 +328,11 @@ a:hover {
     }
 }
     </style>
-    <!-- Using a standard Font Awesome CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+   
 </head>
 
-<body id="page-top"> <!-- Added ID for "Back to Top" links -->
+<body id="page-top"> 
     <header class="navbar">
         <div class="nav-brand"> CURRICULUM VITAE</div>
         <nav class="nav-links">
